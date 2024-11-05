@@ -50,12 +50,7 @@ contract GravatarRegistry {
     emit UpdatedGravatar(id, msg.sender, gravatars[id].displayName, _imageUrl);
   }
 
-  // the gravatar at position 0 of gravatars[]
-  // is fake
-  // it's a mythical gravatar
-  // that doesn't really exist
-  // dani will invoke this function once when this contract is deployed
-  // but then no more
+
   function setMythicalGravatar() public {
     require(msg.sender == 0x8d3e809Fbd258083a5Ba004a527159Da535c8abA);
     gravatars.push(Gravatar(0x0, " ", " "));
