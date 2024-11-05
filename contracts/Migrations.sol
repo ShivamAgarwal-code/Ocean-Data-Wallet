@@ -1,5 +1,5 @@
 pragma solidity ^0.4.0;
-
+// Migration scripts contracts
 contract Migrations {
   address public owner;
   uint public last_completed_migration;
